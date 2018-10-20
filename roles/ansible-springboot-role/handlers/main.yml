@@ -1,7 +1,7 @@
 ---
 # handlers file for ansible-springboot-role
 
-- name: restart bootrest
+- name: restart bootrest-1
   service:
-    name: {{ spring_boot_application_id }}
+    name: bootrest-1
     state: restarted
