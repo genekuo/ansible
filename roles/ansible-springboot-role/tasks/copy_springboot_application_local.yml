@@ -1,8 +1,8 @@
 - name: "Copy jar application"
   copy:
-    src: "{{ spring_boot_file }}"
+    src: "{{ spring_boot_file_source_local }}"
     dest: "{{ spring_boot_user_dir }}/{{ spring_boot_application_id }}.jar"
     owner: "{{ spring_boot_username }}"
     group: "{{ spring_boot_username }}"
     mode: "u+x"
-  when: spring_boot_file is defined and spring_boot_file|length > 0
+  when: spring_boot_file_source_local is defined and spring_boot_file_source_local|length > 0
