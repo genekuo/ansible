@@ -5,4 +5,5 @@
     owner: "{{ spring_boot_username }}"
     group: "{{ spring_boot_username }}"
     mode: "u+x"
+  notify: restart {{ spring_boot_application_id }}
   when: spring_boot_file_source_local is defined and spring_boot_file_source_local|length > 0
