@@ -4,5 +4,5 @@
   become: yes
   roles:
   - { role: ansible-springboot-role, 
-      spring_boot_file_source_local: 'https://github.com/genekuo/ansible/tree/master/bootrest/target/bootrest-1.jar' 
+      spring_boot_file_source_local: 'bootrest/target/bootrest-1.jar' 
     }
