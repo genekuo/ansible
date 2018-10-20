@@ -1,5 +1,6 @@
 - name: "Copy jar application"
   copy:
+    remote_src: True
     src: "{{ spring_boot_file }}"
     dest: "{{ spring_boot_user_dir }}/{{ spring_boot_application_id }}.jar"
     owner: "{{ spring_boot_username }}"
